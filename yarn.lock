@@ -535,49 +535,6 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.17.2.tgz#5a2d08b81e8064b34242d5cc9973ef8dd1e60503"
   integrity sha512-TGGO7v7qOq4CYmSBVEYpI1Y5xDuCEnbVC5Vth8mOsW0gDSzxNrVERPc790IGHsrT2dQSimgMr9Ub3Y1Jci5/8w==
 
-"@syncfusion/ej2-barcode-generator@25.2.4":
-  version "25.2.4"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-barcode-generator/-/ej2-barcode-generator-25.2.4.tgz#9656f07e81f12e84570a4f68d004175586cc807e"
-  integrity sha512-lhPaAN7GYA9iFKE6aFyFDj7Ex75V88PAKkucpDi4TUPcmbgD/Sz06okSfc/o5yuo6KIGXwx0rjmwFg8xEHFE2A==
-  dependencies:
-    "@syncfusion/ej2-base" "~25.2.3"
-    "@syncfusion/ej2-data" "~25.2.3"
-
-"@syncfusion/ej2-base@~25.2.3":
-  version "25.2.3"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-base/-/ej2-base-25.2.3.tgz#0e6ac8de4609d8ade593bfc69e1b5f50469fe3a8"
-  integrity sha512-BG19rDmr0pCcww5pcssDIdyZ1FjPC9kqRKbBtYFc3maIwMz595GQHSjsAfxWvl8XO+qRZtSMPv3lHs9foM9Zew==
-  dependencies:
-    "@syncfusion/ej2-icons" "~25.2.3"
-
-"@syncfusion/ej2-data@~25.2.3":
-  version "25.2.3"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-data/-/ej2-data-25.2.3.tgz#90a8fba3eccf919499930ac44c1f6ad20ebeaba4"
-  integrity sha512-lzULJdW4ok79opA+FGppfPx1nUGiDwIA2KGr8XBOLmShW1o+Jt+KNOx3EVkW2r3VqRX3E0Pg5OlNk3uHFPe7sw==
-  dependencies:
-    "@syncfusion/ej2-base" "~25.2.3"
-
-"@syncfusion/ej2-icons@~25.2.3":
-  version "25.2.3"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-icons/-/ej2-icons-25.2.3.tgz#3202fa3bbea1a440fe0091897972a47f730c9cdd"
-  integrity sha512-WptrAR3YShA8S+mushGCojRmBgLUCYpsYq1Nw1S1ynWNRcijlZgdil5L7LjaGA8H6CA/mFG5BMBDCmZ76hYX1A==
-
-"@syncfusion/ej2-react-barcode-generator@^25.2.4":
-  version "25.2.4"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-react-barcode-generator/-/ej2-react-barcode-generator-25.2.4.tgz#0b20b6c07bf50b5ab7923b2ff87f9462aaa32516"
-  integrity sha512-NHCe9QHT89peEImzCoz+iIQJ2JhcgtjsTFyB7tLU9BUrnxRR4AMjEQax0RjpTBGLkP2trpe5IlnAzBVB7j/KUQ==
-  dependencies:
-    "@syncfusion/ej2-barcode-generator" "25.2.4"
-    "@syncfusion/ej2-base" "~25.2.3"
-    "@syncfusion/ej2-react-base" "~25.2.3"
-
-"@syncfusion/ej2-react-base@~25.2.3":
-  version "25.2.3"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-react-base/-/ej2-react-base-25.2.3.tgz#0f641cb55c2346ed143bd5fbd89cc8247bffd29e"
-  integrity sha512-DJxjhHR9QJzAGIEl4XCmHNVxpkL5uFm0PU0pufQrjNgmorQDo0iQJ4abk59B8Uw1WFmuU4/5Y+KFImExdE92gg==
-  dependencies:
-    "@syncfusion/ej2-base" "~25.2.3"
-
 "@types/babel__core@^7.20.5":
   version "7.20.5"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.20.5.tgz#3df15f27ba85319caa07ba08d0721889bb39c017"
@@ -826,13 +783,6 @@ balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
-
-barcode-tool@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/barcode-tool/-/barcode-tool-1.1.1.tgz#08a366b7efc47c3b9f4b334c495c52a7c757b8d5"
-  integrity sha512-FK87OEvcId+gwZdsjUwwEufwgtRXbYF4CNt6sMESA/BX5KXRvNgZBpsSZfVSOV2zJ1j4EIcY8mGQoJIYFfYTjA==
-  dependencies:
-    jsbarcode "^3.11.6"
 
 binary-extensions@^2.0.0:
   version "2.3.0"
@@ -1361,6 +1311,11 @@ hasown@^2.0.0:
   dependencies:
     function-bind "^1.1.2"
 
+html-to-image@^1.11.11:
+  version "1.11.11"
+  resolved "https://registry.yarnpkg.com/html-to-image/-/html-to-image-1.11.11.tgz#c0f8a34dc9e4b97b93ff7ea286eb8562642ebbea"
+  integrity sha512-9gux8QhvjRO/erSnDPv28noDZcPZmYE7e1vFsBLKLlRlKDSqNJYebj6Qz1TGd5lsRV+X+xYyjCKjuZdABinWjA==
+
 ignore@^5.2.0, ignore@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.3.1.tgz#5073e554cd42c5b33b394375f538b8593e34d4ef"
@@ -1464,7 +1419,7 @@ js-yaml@^4.1.0:
   dependencies:
     argparse "^2.0.1"
 
-jsbarcode@^3.11.6:
+jsbarcode@^3.8.0:
   version "3.11.6"
   resolved "https://registry.yarnpkg.com/jsbarcode/-/jsbarcode-3.11.6.tgz#96e8fbc3395476e162982a6064b98a09b5ea02c0"
   integrity sha512-G5TKGyKY1zJo0ZQKFM1IIMfy0nF2rs92BLlCz+cU4/TazIc4ZH+X1GYeDRt7TKjrYqmPfTjwTBkU/QnQlsYiuA==
@@ -1536,7 +1491,7 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
-loose-envify@^1.1.0:
+loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -1626,7 +1581,7 @@ normalize-range@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==
 
-object-assign@^4.0.1:
+object-assign@^4.0.1, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==
@@ -1787,6 +1742,15 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
+prop-types@^15.6.2:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.13.1"
+
 punycode@^2.1.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
@@ -1797,6 +1761,14 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
+react-barcode@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/react-barcode/-/react-barcode-1.5.1.tgz#e8b1fb872f3ad56f97beffa26140578c58c244b4"
+  integrity sha512-Au/L6XFp9Tc12dTFbRgTfv0vpxn/UE2xJ4nDbMBWFzwIu2sB3GMapTu9Rs4ETq3wj0AthBCpP7nB8MoaFl5V8Q==
+  dependencies:
+    jsbarcode "^3.8.0"
+    prop-types "^15.6.2"
+
 react-dom@^18.2.0:
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"
@@ -1804,6 +1776,11 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.2"
+
+react-is@^16.13.1:
+  version "16.13.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
+  integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react-refresh@^0.14.0:
   version "0.14.2"
