@@ -42,7 +42,7 @@ export function Card(props: CardProps) {
       .catch((err) => {
         console.log(err);
       });
-  }, [ref]);
+  }, [ref, value]);
 
   React.useEffect(() => {
     handleGenerateBarcode();
