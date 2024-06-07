@@ -85,7 +85,7 @@ export function BarcodeSequence() {
         <div className='overflow-hidden bg-white rounded shadow-md w-fit text-slate-500 shadow-slate-200'>
           <div
             onClick={() => setIsShowing(true)}
-            className='px-1 pb-1 bg-white'
+            className='px-1 pb-1 bg-white cursor-pointer'
             ref={ref}
           >
             <p className='z-50 text-right text-black uppercase'>CODE-128</p>

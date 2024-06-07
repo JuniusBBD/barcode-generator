@@ -57,7 +57,7 @@ export function Card(props: CardProps) {
         <div className='p-6 space-y-5'>
           <div
             onClick={() => setIsShowing(true)}
-            className='px-1 pb-1 bg-white'
+            className='px-1 pb-1 bg-white cursor-pointer'
             ref={ref}
           >
             <p className='z-50 text-right text-black uppercase'>
