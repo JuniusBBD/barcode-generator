@@ -2,6 +2,7 @@ import React from 'react';
 import { faker } from '@faker-js/faker';
 import Barcode from 'react-barcode';
 import { toPng } from 'html-to-image';
+import ModalBasic from './Modal';
 
 type CardProps = {
   imageId: string;
@@ -20,6 +21,7 @@ export function generateSerialNumber(prefix: string) {
 
 export function Card(props: CardProps) {
   const [value, setValue] = React.useState('');
+  const [isShowing, setIsShowing] = React.useState(false);
   const ref = React.useRef<HTMLDivElement>(null);
 
   const handleGenerateBarcode = React.useCallback(() => {
@@ -51,10 +53,14 @@ export function Card(props: CardProps) {
   return (
     <>
       {/*<!-- Component: Basic card --> */}
-      <div className='overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200'>
+      <div className='overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200'>
         <div className='p-6 space-y-5'>
-          <div className='bg-white px-1 pb-1' ref={ref}>
-            <p className='uppercase text-right z-50 text-black'>
+          <div
+            onClick={() => setIsShowing(true)}
+            className='px-1 pb-1 bg-white'
+            ref={ref}
+          >
+            <p className='z-50 text-right text-black uppercase'>
               {props.buttonText}
             </p>
             <Barcode
@@ -68,18 +74,18 @@ export function Card(props: CardProps) {
           <div className='flex items-center'>
             <button
               onClick={handleGenerateBarcode}
-              className='inline-flex items-center w-full justify-center h-8 gap-2 px-4 text-xs font-medium tracking-wide text-white transition duration-300 rounded-full focus-visible:outline-none whitespace-nowrap bg-rose-500 hover:bg-rose-600 focus:bg-rose-700 disabled:cursor-not-allowed disabled:border-rose-300 disabled:bg-rose-300 disabled:shadow-none'
+              className='inline-flex items-center justify-center w-full h-8 gap-2 px-4 text-xs font-medium tracking-wide text-white transition duration-300 rounded-full focus-visible:outline-none whitespace-nowrap bg-rose-500 hover:bg-rose-600 focus:bg-rose-700 disabled:cursor-not-allowed disabled:border-rose-300 disabled:bg-rose-300 disabled:shadow-none'
             >
               <span>Generate barcode</span>
             </button>
             <button
               onClick={onDownload}
-              className='inline-flex h-12 items-center justify-center gap-2 justify-self-center whitespace-nowrap rounded px-6 text-sm font-medium tracking-wide text-rose-500 transition duration-300 hover:bg-rose-50 hover:text-rose-600 focus:bg-rose-100 focus:text-rose-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:text-rose-300 disabled:shadow-none disabled:hover:bg-transparent'
+              className='inline-flex items-center justify-center h-12 gap-2 px-6 text-sm font-medium tracking-wide transition duration-300 rounded justify-self-center whitespace-nowrap text-rose-500 hover:bg-rose-50 hover:text-rose-600 focus:bg-rose-100 focus:text-rose-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:text-rose-300 disabled:shadow-none disabled:hover:bg-transparent'
             >
               <span className='relative only:-mx-6'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className='h-5 w-5'
+                  className='w-5 h-5'
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
@@ -103,6 +109,15 @@ export function Card(props: CardProps) {
         </div>
       </div>
       {/*<!-- End Basic card --> */}
+      <ModalBasic isShowing={isShowing} setIsShowing={setIsShowing}>
+        <Barcode
+          margin={0}
+          height={50}
+          // @ts-ignore
+          text={`S/N: ${value}`}
+          value={value}
+        />
+      </ModalBasic>
     </>
   );
 }

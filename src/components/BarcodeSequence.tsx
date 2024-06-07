@@ -1,9 +1,11 @@
 import React from 'react';
 import Barcode from 'react-barcode';
 import { toPng } from 'html-to-image';
+import ModalBasic from './Modal';
 
 export function BarcodeSequence() {
   const [value, setValue] = React.useState('');
+  const [isShowing, setIsShowing] = React.useState(false);
   const ref = React.useRef<HTMLDivElement>(null);
   const [generateBarcode, setGenerateBarcode] = React.useState(false);
 
@@ -81,7 +83,11 @@ export function BarcodeSequence() {
 
       {generateBarcode && value && (
         <div className='overflow-hidden bg-white rounded shadow-md w-fit text-slate-500 shadow-slate-200'>
-          <div className='px-1 pb-1 bg-white' ref={ref}>
+          <div
+            onClick={() => setIsShowing(true)}
+            className='px-1 pb-1 bg-white'
+            ref={ref}
+          >
             <p className='z-50 text-right text-black uppercase'>CODE-128</p>
             <Barcode
               margin={0}
@@ -93,6 +99,16 @@ export function BarcodeSequence() {
           </div>
         </div>
       )}
+
+      <ModalBasic isShowing={isShowing} setIsShowing={setIsShowing}>
+        <Barcode
+          margin={0}
+          height={50}
+          // @ts-ignore
+          text={`${value}`}
+          value={value}
+        />
+      </ModalBasic>
     </div>
   );
 }
