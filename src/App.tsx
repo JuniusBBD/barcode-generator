@@ -15,9 +15,9 @@ function App() {
 
         <h3 className='px-5 mt-8 text-xl font-bold'>Negative test</h3>
         <section className='flex flex-col items-center gap-5 mt-5 md:flex-row'>
-          <Card prefix='NEG' buttonText='Max' imageId='max' />
-          <Card prefix='INV' buttonText='Max 2' imageId='max-2' />
-          <Card prefix='TES' buttonText='k300' imageId='kwika' />
+          <Card prefix='NEG' buttonText='NEGATIVE' imageId='neg' />
+          <Card prefix='INV' buttonText='INVALID' imageId='invalid' />
+          <Card prefix='TES' buttonText='TEST' imageId='test' />
         </section>
 
         <section>
